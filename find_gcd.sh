@@ -19,7 +19,9 @@ c=0 # initialize a counter
 
 # Start a loop until $b = 0
 while [[ $b -ne 0 ]]; do
-c=$(($c+1)) # incriment the counter
+
+  c=$(($c+1)) # incriment the counter
+
   if [[ $a -gt $b ]]; then
     a=$(($a-b))
     echo "${c}) a: $a  b: $b"
@@ -27,6 +29,7 @@ c=$(($c+1)) # incriment the counter
     b=$(($b-a))
     echo "${c}) a: $a  b: $b"
   fi
+
 done
 
 # Print the result after $b = 0
